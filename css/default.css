@@ -1,0 +1,391 @@
+/* line 4, /Users/jason/Documents/portfolio/sass/neat/grid/box-sizing */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 11, /Users/jason/Documents/portfolio/sass/neat/grid/box-sizing */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* line 2, /Users/jason/Documents/portfolio/sass/menu */
+*:after, *:before {
+  box-sizing: border-box; }
+
+/* line 7, /Users/jason/Documents/portfolio/sass/menu */
+body {
+  background: #333;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif; }
+  /* line 12, /Users/jason/Documents/portfolio/sass/menu */
+  body #slides {
+    display: none; }
+  /* line 19, /Users/jason/Documents/portfolio/sass/menu */
+  body .wrapper i {
+    font-size: 30px;
+    color: white;
+    margin-top: 20px; }
+    /* line 24, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper i:hover {
+      opacity: 0.3; }
+  /* line 29, /Users/jason/Documents/portfolio/sass/menu */
+  body .wrapper .pop-menu {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-width: 0px;
+    border-style: solid;
+    border-color: #333;
+    background-color: rgba(0, 0, 0, 0);
+    transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+    -moz-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+    -webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+    -ms-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+    -o-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s; }
+    /* line 46, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .pop-menu.pop-menu-open {
+      height: 100%;
+      border-width: 0px 0px 0px 90px;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: border-width 0.3s, background-color 0.3s;
+      -moz-transition: border-width 0.3s, background-color 0.3s;
+      -webkit-transition: border-width 0.3s, background-color 0.3s;
+      -ms-transition: border-width 0.3s, background-color 0.3s;
+      -o-transition: border-width 0.3s, background-color 0.3s; }
+      /* line 56, /Users/jason/Documents/portfolio/sass/menu */
+      body .wrapper .pop-menu.pop-menu-open .pop-overlay {
+        height: 100%; }
+      /* line 60, /Users/jason/Documents/portfolio/sass/menu */
+      body .wrapper .pop-menu.pop-menu-open ul li {
+        visibility: visible;
+        opacity: 1;
+        transition: transform 0.3s, opacity 0.3s;
+        -moz-transition: transform 0.3s, opacity 0.3s;
+        -webkit-transition: transform 0.3s, opacity 0.3s;
+        -ms-transition: transform 0.3s, opacity 0.3s;
+        -o-transition: transform 0.3s, opacity 0.3s;
+        transform: translate(0, 0) !important;
+        -moz-transform: translate(0, 0) !important;
+        -webkit-transform: translate(0, 0) !important;
+        -ms-transform: translate(0, 0) !important;
+        -o-transform: translate(0, 0) !important; }
+      /* line 75, /Users/jason/Documents/portfolio/sass/menu */
+      body .wrapper .pop-menu.pop-menu-open .pop-menu_trigger span {
+        background-color: transparent; }
+        /* line 78, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu.pop-menu-open .pop-menu_trigger span:before {
+          transform: translateY(0) rotate(45deg);
+          -moz-transform: translateY(0) rotate(45deg);
+          -webkit-transform: translateY(0) rotate(45deg);
+          -ms-transform: translateY(0) rotate(45deg);
+          -o-transform: translateY(0) rotate(45deg); }
+        /* line 86, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu.pop-menu-open .pop-menu_trigger span:after {
+          transform: translateY(0) rotate(-45deg);
+          -moz-transform: translateY(0) rotate(-45deg);
+          -webkit-transform: translateY(0) rotate(-45deg);
+          -ms-transform: translateY(0) rotate(-45deg);
+          -o-transform: translateY(0) rotate(-45deg); }
+    /* line 96, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .pop-menu .pop-overlay {
+      position: absolute;
+      width: 100%; }
+    /* line 101, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .pop-menu .pop-menu_trigger {
+      position: fixed;
+      top: 15px;
+      left: 28px;
+      display: block;
+      width: 35px;
+      height: 50px;
+      cursor: pointer; }
+      /* line 110, /Users/jason/Documents/portfolio/sass/menu */
+      body .wrapper .pop-menu .pop-menu_trigger span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        margin-top: -2px;
+        background-color: #fff;
+        font-size: 0px;
+        user-select: none;
+        transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -webkit-transition: background-color 0.3s;
+        -ms-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s; }
+        /* line 127, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu .pop-menu_trigger span:before {
+          transform: translateY(-250%);
+          -moz-transform: translateY(-250%);
+          -webkit-transform: translateY(-250%);
+          -ms-transform: translateY(-250%);
+          -o-transform: translateY(-250%); }
+        /* line 135, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu .pop-menu_trigger span:after {
+          transform: translateY(250%);
+          -moz-transform: translateY(250%);
+          -webkit-transform: translateY(250%);
+          -ms-transform: translateY(250%);
+          -o-transform: translateY(250%); }
+        /* line 144, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu .pop-menu_trigger span:before, body .wrapper .pop-menu .pop-menu_trigger span:after {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          content: '';
+          transition: transform 0.3s;
+          -moz-transition: transform 0.3s;
+          -webkit-transition: transform 0.3s;
+          -ms-transition: transform 0.3s;
+          -o-transition: transform 0.3s; }
+    /* line 160, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .pop-menu ul {
+      position: fixed;
+      top: 75px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      width: 90px;
+      list-style: none; }
+      /* line 169, /Users/jason/Documents/portfolio/sass/menu */
+      body .wrapper .pop-menu ul li {
+        padding: 16px 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+        -moz-transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+        -webkit-transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+        -ms-transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+        -o-transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s; }
+        /* line 179, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu ul li:first-child {
+          transform: translate(-100%, 200%);
+          -moz-transform: translate(-100%, 200%);
+          -webkit-transform: translate(-100%, 200%);
+          -ms-transform: translate(-100%, 200%);
+          -o-transform: translate(-100%, 200%); }
+        /* line 187, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu ul li:nth-child(2) {
+          transform: translate(-100%, 100%);
+          -moz-transform: translate(-100%, 100%);
+          -webkit-transform: translate(-100%, 100%);
+          -ms-transform: translate(-100%, 100%);
+          -o-transform: translate(-100%, 100%); }
+        /* line 195, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu ul li:nth-child(3) {
+          transform: translate(-100%, 0);
+          -moz-transform: translate(-100%, 0);
+          -webkit-transform: translate(-100%, 0);
+          -ms-transform: translate(-100%, 0);
+          -o-transform: translate(-100%, 0); }
+        /* line 203, /Users/jason/Documents/portfolio/sass/menu */
+        body .wrapper .pop-menu ul li:nth-child(4) {
+          transform: translate(-100%, -100%);
+          -moz-transform: translate(-100%, -100%);
+          -webkit-transform: translate(-100%, -100%);
+          -ms-transform: translate(-100%, -100%);
+          -o-transform: translate(-100%, -100%); }
+      /* line 212, /Users/jason/Documents/portfolio/sass/menu */
+      body .wrapper .pop-menu ul li, body .wrapper .pop-menu ul a {
+        display: block;
+        width: 100%;
+        text-align: center; }
+  /* line 220, /Users/jason/Documents/portfolio/sass/menu */
+  body .wrapper #videoWrapper {
+    height: 300px;
+    overflow: hidden;
+    width: 100%; }
+  /* line 228, /Users/jason/Documents/portfolio/sass/menu */
+  body .wrapper section.hero {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    color: white;
+    text-align: center; }
+    /* line 236, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper section.hero h3 {
+      font-size: 80px;
+      font-weight: 300;
+      margin-bottom: 0; }
+      /* line 241, /Users/jason/Documents/portfolio/sass/menu */
+      body .wrapper section.hero h3 .bold {
+        font-weight: bold; }
+    /* line 246, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper section.hero p {
+      margin: 0; }
+    /* line 250, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper section.hero #bg {
+      width: 100%; }
+  /* line 256, /Users/jason/Documents/portfolio/sass/menu */
+  body .wrapper .imgWrapper {
+    float: left;
+    display: block;
+    margin-right: 2.357651598%;
+    width: 100%;
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    /* line 87, /Users/jason/Documents/portfolio/sass/neat/grid/span-columns */
+    body .wrapper .imgWrapper:last-child {
+      margin-right: 0; }
+    /* line 260, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .imgWrapper .color1 {
+      background-color: #4180B3;
+      height: 5px;
+      display: table-cell;
+      width: 58.333333333%; }
+    /* line 265, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .imgWrapper .color2 {
+      background-color: #5CB446;
+      height: 5px;
+      display: table-cell;
+      width: 25%; }
+    /* line 270, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .imgWrapper .color3 {
+      background-color: #ED9922;
+      height: 5px;
+      display: table-cell;
+      width: 16.666666667%; }
+  /* line 277, /Users/jason/Documents/portfolio/sass/menu */
+  body .wrapper .slideWrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 50px; }
+    /* line 20, /Users/jason/Documents/portfolio/sass/bourbon/addons/clearfix */
+    body .wrapper .slideWrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 20, /Users/jason/Documents/portfolio/sass/bourbon/addons/clearfix */
+    body .wrapper .slideWrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 283, /Users/jason/Documents/portfolio/sass/menu */
+    body .wrapper .slideWrapper .flexslider {
+      float: left;
+      display: block;
+      margin-right: 2.357651598%;
+      width: 100%; }
+      /* line 87, /Users/jason/Documents/portfolio/sass/neat/grid/span-columns */
+      body .wrapper .slideWrapper .flexslider:last-child {
+        margin-right: 0; }
+
+/* line 291, /Users/jason/Documents/portfolio/sass/menu */
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-weight: 300;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px white solid; }
+  /* line 20, /Users/jason/Documents/portfolio/sass/bourbon/addons/clearfix */
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 20, /Users/jason/Documents/portfolio/sass/bourbon/addons/clearfix */
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 301, /Users/jason/Documents/portfolio/sass/menu */
+  .content:first-child {
+    border: none; }
+  /* line 305, /Users/jason/Documents/portfolio/sass/menu */
+  .content .info {
+    float: left;
+    display: block;
+    margin-right: 2.357651598%;
+    width: 100%; }
+    /* line 87, /Users/jason/Documents/portfolio/sass/neat/grid/span-columns */
+    .content .info:last-child {
+      margin-right: 0; }
+    /* line 307, /Users/jason/Documents/portfolio/sass/menu */
+    .content .info h3 {
+      font-weight: 300;
+      margin: 0;
+      font-size: 40px; }
+
+/* line 316, /Users/jason/Documents/portfolio/sass/menu */
+footer {
+  margin-top: 100px; }
+  /* line 319, /Users/jason/Documents/portfolio/sass/menu */
+  footer .imgWrapper {
+    margin-bottom: 50px; }
+  /* line 323, /Users/jason/Documents/portfolio/sass/menu */
+  footer .backgroundColor {
+    background-color: #1D1A1A;
+    padding-bottom: 50px; }
+  /* line 328, /Users/jason/Documents/portfolio/sass/menu */
+  footer .footerWrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-weight: 300;
+    margin-bottom: 50px; }
+    /* line 20, /Users/jason/Documents/portfolio/sass/bourbon/addons/clearfix */
+    footer .footerWrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 334, /Users/jason/Documents/portfolio/sass/menu */
+    footer .footerWrapper .photo {
+      float: left;
+      display: block;
+      margin-right: 2.357651598%;
+      width: 48.821174201%;
+      margin-left: 25.589412899%; }
+      /* line 87, /Users/jason/Documents/portfolio/sass/neat/grid/span-columns */
+      footer .footerWrapper .photo:last-child {
+        margin-right: 0; }
+      /* line 338, /Users/jason/Documents/portfolio/sass/menu */
+      footer .footerWrapper .photo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 4px white solid;
+        width: 120px; }
+    /* line 347, /Users/jason/Documents/portfolio/sass/menu */
+    footer .footerWrapper .about {
+      color: white;
+      float: left;
+      display: block;
+      margin-right: 2.357651598%;
+      width: 65.880782801%;
+      margin: auto;
+      margin-left: 17.0596086%; }
+      /* line 87, /Users/jason/Documents/portfolio/sass/neat/grid/span-columns */
+      footer .footerWrapper .about:last-child {
+        margin-right: 0; }
+  /* line 355, /Users/jason/Documents/portfolio/sass/menu */
+  footer .right {
+    float: right; }
+
+/* line 360, /Users/jason/Documents/portfolio/sass/menu */
+.ux {
+  width: 700px !important;
+  margin: auto; }
+
+@media (max-width: 700px) {
+  /* line 366, /Users/jason/Documents/portfolio/sass/menu */
+  .ux {
+    width: 100% !important; }
+ }
